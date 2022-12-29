@@ -22,8 +22,8 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.(tsx|ts|js|jsx)": [
-      "eslint"
+    "{src,cypress}/**/*.(tsx|ts|js|jsx)": [
+      "eslint --max-warnings 0"
     ],
     "src/**/*.(css|scss)": "stylelint"
   },
